@@ -9,7 +9,7 @@ A lightweight Python tool that checks Markdown files for common quality issues.
 - Detects missing Markdown headings.
 - Reports trailing whitespace.
 - Finds Markdown links with empty destinations.
-- Checks individual files or directories.
+- Checks individual Markdown files or directories.
 - Runs automated tests using GitHub Actions.
 
 ## Requirements
@@ -19,19 +19,21 @@ A lightweight Python tool that checks Markdown files for common quality issues.
 
 ## Usage
 
-Check a single file:
+Check a single Markdown file:
 
 ```bash
 python markdown_checker.py README.md
 ```
 
-Check Markdown files in a directory:
+Check Markdown files in the current directory:
 
 ```bash
 python markdown_checker.py .
 ```
 
-## Run tests
+## Run Tests
+
+Run the automated tests with:
 
 ```bash
 python -m unittest -v
@@ -43,8 +45,8 @@ Suggestions, bug reports, and pull requests are welcome. Please open an issue to
 
 ## License
 
-This project is intended to use the MIT License. See the `LICENSE` file once it has been added.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Project status
+## Project Status
 
-This is an early-stage open-source project. Contributions and feedback are welcome as it develops.
+This is an early-stage open-source project. Contributions, feedback, and suggestions are welcome as it develops.
