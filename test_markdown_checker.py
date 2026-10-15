@@ -24,6 +24,14 @@ class TestMarkdownChecker(unittest.TestCase):
         self.assertTrue(
             any("missing Markdown heading" in issue for issue in issues)
         )
+        
+    def test_trailing_whitespace_reports_correct_line(self):
+         issues = self.check_text(
+        "# Example\nClean line\nText with spaces   \n"
+         )
+         self.assertTrue(
+         any(":3: trailing whitespace" in issue for issue in issues)
+         )
 
     def test_trailing_whitespace_is_reported(self):
         issues = self.check_text("# Example\nText with spaces   \n")
